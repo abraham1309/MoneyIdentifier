@@ -1,0 +1,382 @@
+body{
+    overflow-x: hidden;
+}
+
+.section-inicio{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-inicio .div-contenido{
+    width: 50%;
+    height: 100%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding-bottom: 11%;
+}
+
+.section-inicio .div-contenido .titulo-principal{
+    font-size: 70px;
+    font-family: "Libre Franklin", sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+.section-inicio .div-contenido .descripcion-principal{
+    margin-top: -10px;
+    font-size: 30px;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+}
+
+.btn-movil{
+    display: none;
+}
+
+.btn-descargar{
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffb74d ;
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    color: #021221;
+    cursor: pointer;
+}
+
+.section-inicio .div-contenido img{
+    width: 30%;
+    margin-bottom: 0;
+}
+
+.section-inicio .div-img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.section-inicio .div-img img{
+    width: 550px;
+}
+
+.section-inicio .div-onda{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140%;
+    background-image: url(../img/onda.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+@media (max-width: 1260px) {
+    .section-inicio .div-contenido .titulo-principal{
+        font-size: 50px;
+    }
+    .section-inicio .div-contenido .descripcion-principal{
+        margin-top: -35px;
+        font-size: 25px
+    }
+    .section-inicio .div-img img{
+        width: 500px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section-inicio .div-contenido .titulo-principal{
+        font-size: 40px;
+    }
+    .section-inicio .div-contenido .descripcion-principal{
+        margin-top: -20px;
+        font-size: 25px
+    }
+    .section-inicio .div-img img{
+        width: 400px;
+    }
+}
+
+@media (max-width: 850px) {
+    .section-inicio .div-contenido .titulo-principal{
+        font-size: 35px;
+    }
+    .section-inicio .div-contenido .descripcion-principal{
+        margin-top: -20px;
+        font-size: 25px
+    }
+    .section-inicio .div-img img{
+        width: 325px;
+    }
+}
+
+@media (max-width: 680px) {
+    .section-inicio{
+        width: 100dvw;
+        height: 100dvh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .section-inicio .div-contenido{
+        width: 90%;
+        height: auto;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .section-inicio .div-img{
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .btn-pc{
+        display: none;
+    }
+
+    .btn-movil{
+        margin-top: 5%;
+        display: block;
+        width: 90%;
+    }
+
+    .btn-movil button{
+        width: 100%;
+    }
+    .section-inicio .div-onda{
+        height: 110%;
+        background-image: url(../img/onda-movil.png);
+    }
+    .section-inicio .div-contenido .descripcion-principal{
+        margin-top: -10px;
+        font-size: 30px;
+        color: #fff;
+        font-family: "Quicksand", sans-serif;
+    }
+
+
+}
+
+@media (max-width: 550px) {
+    .section-inicio .div-contenido .titulo-principal{
+        font-size: 35px;
+    }
+
+    .section-inicio .div-contenido .descripcion-principal{
+        font-size: 20px;
+        text-align: center;
+    }
+    .section-inicio .div-img img{
+        width: 280px;
+    }
+    .section-inicio .div-contenido img{
+        width: 40%;
+        margin-bottom: -1%;
+    }
+}
+
+@media (max-width: 420px) {
+    .section-inicio .div-contenido .titulo-principal{
+        font-size: 30px;
+    }
+
+    .section-inicio .div-contenido .descripcion-principal{
+        font-size: 18px;
+    }
+    .section-inicio .div-img img{
+        width: 200px;
+    }
+    .section-inicio .div-contenido img{
+        width: 35%;
+        margin-bottom: -1%;
+    }
+}
+
+
+/* Codigo para la seccion de pruebas */
+.carousel{
+    display: none;
+}
+
+.div-general-pruebas{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    margin-top: 150px;
+}
+
+.div-general-pruebas .div-texto{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.div-general-pruebas .div-texto h2{
+    font-size: 50px;
+    font-family: "Quicksand", sans-serif;
+    color: #0d47a1;
+    font-weight: bold;
+}
+
+.div-general-pruebas .div-texto p{
+    font-size: 25px;
+    font-family: "Quicksand", sans-serif;
+    color: #000;
+    margin-top: -5px;
+}
+
+.div-general-pruebas .div-general-slider{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    width: 80%;
+    height: 90%;
+}
+
+
+.swiper-slide {
+    background-position: center center;
+    background-size: cover;
+    width: 500px;
+    height: 800px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .swiper {
+        width: 90%;
+        height: 90%;
+    }
+    .div-general-pruebas .div-texto h2{
+        font-size: 40px;
+    }
+
+    .div-general-pruebas .div-texto p{
+        font-size: 20px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 700px) {
+    
+    .div-general-pruebas{
+        width: 100dvw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .div-general-pruebas .div-texto{
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .div-general-pruebas .div-texto h2{
+        text-align: center;
+    }
+
+   .div-general-pruebas .div-general-slider{
+        width: 90%;
+        height: auto;
+    }
+    .mySwiper {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    .carousel{
+        display: block;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .div-general-pruebas .div-texto h2{
+        font-size: 30px;
+    }
+
+    .div-general-pruebas .div-texto p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+    .div-general-pruebas{
+        margin-top: 30px;
+    }
+
+    .div-general-pruebas .div-texto h2{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 380px) {
+    .div-general-pruebas{
+        margin-top: 70px;
+    }
+
+    .div-general-pruebas .div-texto h2{
+        font-size: 23px;
+    }
+}
+
+
+/* Estilos para el footer */
+.section-final{
+    width: 100dvw;
+    height: 20dvh;
+}
+.section-final .div-onda{
+    width: 100%;
+    height: 200%;
+    background-image: url(../img/onda2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top;
+    z-index: -1;
+}
